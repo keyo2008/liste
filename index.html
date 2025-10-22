@@ -363,7 +363,7 @@
   <li>metzgerzwiebeln 25kg <input type="number" value="" min="0"></li>
   <li>Zitronen Bio<input type="number" value="" min="0"></li>
   <li>Zitronen <input type="number" value="" min="0"></li>
-
+</ul>
     <!-- Button -->
     <button id="sendMailBtn">Liste absenden</button>
   </div>
@@ -391,6 +391,7 @@
         const qty = input ? input.value : '';
         if (qty && Number(qty) > 0) {
           body += name + ': ' + qty + '\n';
+
         }
       });
 
